@@ -1,0 +1,25 @@
+-----------------------------------
+-- Area: Northern San d'Oria
+--  NPC: Prerivon
+-- Type: Standard Dialogue NPC
+-- !pos 142.324 0.000 132.515 231
+--
+-----------------------------------
+package.loaded["scripts/zones/Northern_San_dOria/TextIDs"] = nil;
+-----------------------------------
+require("scripts/zones/Northern_San_dOria/TextIDs");
+-----------------------------------
+
+function onTrade(player,npc,trade)
+end;
+
+function onTrigger(player,npc)
+    player:showText(npc,PRERIVON_DIALOG);
+end;
+
+function onEventUpdate(player,csid,option)
+end;
+
+function onEventFinish(player,csid,option)
+end;
+

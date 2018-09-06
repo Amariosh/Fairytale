@@ -1,0 +1,29 @@
+-----------------------------------
+-- Area: Ilrusi Atoll
+--  NPC: Ancient Lockbox
+-- !zone 55
+-----------------------------------
+package.loaded["scripts/zones/Ilrusi_Atoll/IDs"] = nil;
+-------------------------------------
+require("scripts/globals/bcnm");
+require("scripts/globals/settings");
+require("scripts/globals/keyitems");
+require("scripts/globals/missions");
+require("scripts/zones/Ilrusi_Atoll/IDs");
+-----------------------------------
+
+function onTrade(player,npc,trade)
+
+end;
+
+function onTrigger(player,npc)
+
+    -- player:getBCNMloot();
+
+end;
+
+function onEventUpdate(player,csid,option)
+end;
+
+function onEventFinish(player,csid,option)
+end;

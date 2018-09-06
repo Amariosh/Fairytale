@@ -1,0 +1,23 @@
+-----------------------------------
+-- Area: Port Bastok
+--  NPC: Fo Mocorho
+-- Type: Weather Reporter
+-----------------------------------
+package.loaded["scripts/zones/Port_Bastok/TextIDs"] = nil;
+-----------------------------------
+require("scripts/globals/settings");
+require("scripts/zones/Port_Bastok/TextIDs");
+-----------------------------------
+
+function onTrade(player,npc,trade)
+end;
+
+function onTrigger(player,npc)
+    player:startEvent(116,0,0,0,0,0,0,0,VanadielTime());
+end;
+
+function onEventUpdate(player,csid,option)
+end;
+
+function onEventFinish(player,csid,option)
+end;

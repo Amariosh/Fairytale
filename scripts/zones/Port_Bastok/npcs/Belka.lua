@@ -1,0 +1,38 @@
+-----------------------------------
+-- Area: Port Bastok
+--  NPC: Belka
+-- Derfland Regional Merchant
+-----------------------------------
+package.loaded["scripts/zones/Port_Bastok/TextIDs"] = nil
+-----------------------------------
+require("scripts/zones/Port_Bastok/TextIDs")
+require("scripts/globals/conquest")
+require("scripts/globals/shop")
+
+function onTrade(player,npc,trade)
+end
+
+function onTrigger(player,npc)
+    if GetRegionOwner(dsp.region.DERFLAND) ~= dsp.nation.BASTOK then
+        player:showText(npc, BELKA_CLOSED_DIALOG)
+    else
+        local stock =
+        {
+            4352,  128,    -- Derfland Pear
+            617,   142,    -- Ginger
+            4545,   62,    -- Gysahl Greens
+            1412, 1656,    -- Olive Flower
+            633,    14,    -- Olive Oil
+            951,   110,    -- Wijnruit
+        }
+
+        player:showText(npc, BELKA_OPEN_DIALOG)
+        dsp.shop.general(player, stock, BASTOK)
+    end
+end
+
+function onEventUpdate(player,csid,option)
+end
+
+function onEventFinish(player,csid,option)
+end

@@ -1,0 +1,3 @@
+NOSFERATU               = 17056157
+PANDEMONIUM_WARDEN      = 17056168
+CHIGRE                  = 17056186
